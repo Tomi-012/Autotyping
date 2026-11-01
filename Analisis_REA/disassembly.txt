@@ -1,0 +1,1394 @@
+
+================================================================================
+FUNCTION: <module> SOURCE LINE: 1
+  0           0 RESUME                   0
+
+  1           2 LOAD_CONST               0 (0)
+              4 LOAD_CONST               1 (None)
+              6 IMPORT_NAME              0 (tkinter)
+              8 STORE_NAME               1 (tk)
+
+  2          10 LOAD_CONST               0 (0)
+             12 LOAD_CONST               2 (('scrolledtext', 'ttk'))
+             14 IMPORT_NAME              0 (tkinter)
+             16 IMPORT_FROM              2 (scrolledtext)
+             18 STORE_NAME               2 (scrolledtext)
+             20 IMPORT_FROM              3 (ttk)
+             22 STORE_NAME               3 (ttk)
+             24 POP_TOP
+
+  3          26 LOAD_CONST               0 (0)
+             28 LOAD_CONST               1 (None)
+             30 IMPORT_NAME              4 (pyautogui)
+             32 STORE_NAME               4 (pyautogui)
+
+  4          34 LOAD_CONST               0 (0)
+             36 LOAD_CONST               1 (None)
+             38 IMPORT_NAME              5 (threading)
+             40 STORE_NAME               5 (threading)
+
+  5          42 LOAD_CONST               0 (0)
+             44 LOAD_CONST               1 (None)
+             46 IMPORT_NAME              6 (time)
+             48 STORE_NAME               6 (time)
+
+  6          50 LOAD_CONST               0 (0)
+             52 LOAD_CONST               1 (None)
+             54 IMPORT_NAME              7 (keyboard)
+             56 STORE_NAME               7 (keyboard)
+
+  8          58 PUSH_NULL
+             60 LOAD_BUILD_CLASS
+             62 LOAD_CONST               3 (<code object AutoTypingApp at 0x000001B8143C7330, file "AutoTyping.py", line 8>)
+             64 MAKE_FUNCTION            0
+             66 LOAD_CONST               4 ('AutoTypingApp')
+             68 CALL                     2
+             76 STORE_NAME               8 (AutoTypingApp)
+
+253          78 LOAD_NAME                9 (__name__)
+             80 LOAD_CONST               5 ('__main__')
+             82 COMPARE_OP              40 (==)
+             86 POP_JUMP_IF_FALSE       42 (to 172)
+
+254          88 PUSH_NULL
+             90 LOAD_NAME                1 (tk)
+             92 LOAD_ATTR               20 (Tk)
+            112 CALL                     0
+            120 STORE_NAME              11 (root)
+
+255         122 PUSH_NULL
+            124 LOAD_NAME                8 (AutoTypingApp)
+            126 LOAD_NAME               11 (root)
+            128 CALL                     1
+            136 STORE_NAME              12 (app)
+
+256         138 LOAD_NAME               11 (root)
+            140 LOAD_ATTR               27 (NULL|self + mainloop)
+            160 CALL                     0
+            168 POP_TOP
+            170 RETURN_CONST             1 (None)
+
+253     >>  172 RETURN_CONST             1 (None)
+
+================================================================================
+FUNCTION: AutoTypingApp SOURCE LINE: 8
+  8           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('AutoTypingApp')
+              8 STORE_NAME               2 (__qualname__)
+
+  9          10 LOAD_CONST               1 (<code object __init__ at 0x000001B814271F50, file "AutoTyping.py", line 9>)
+             12 MAKE_FUNCTION            0
+             14 STORE_NAME               3 (__init__)
+
+ 32          16 LOAD_CONST               2 (<code object configure_styles at 0x000001B81422D7B0, file "AutoTyping.py", line 32>)
+             18 MAKE_FUNCTION            0
+             20 STORE_NAME               4 (configure_styles)
+
+ 47          22 LOAD_CONST               3 (<code object create_widgets at 0x000001B8144F4B40, file "AutoTyping.py", line 47>)
+             24 MAKE_FUNCTION            0
+             26 STORE_NAME               5 (create_widgets)
+
+158          28 LOAD_CONST               4 (<code object toggle_always_on_top at 0x000001B81404FB90, file "AutoTyping.py", line 158>)
+             30 MAKE_FUNCTION            0
+             32 STORE_NAME               6 (toggle_always_on_top)
+
+161          34 LOAD_CONST               5 (<code object start_typing at 0x000001B8144F62A0, file "AutoTyping.py", line 161>)
+             36 MAKE_FUNCTION            0
+             38 STORE_NAME               7 (start_typing)
+
+175          40 LOAD_CONST               6 (<code object perform_typing at 0x000001B814259DB0, file "AutoTyping.py", line 175>)
+             42 MAKE_FUNCTION            0
+             44 STORE_NAME               8 (perform_typing)
+
+206          46 LOAD_CONST               7 (<code object type_char_by_char at 0x000001B814002D30, file "AutoTyping.py", line 206>)
+             48 MAKE_FUNCTION            0
+             50 STORE_NAME               9 (type_char_by_char)
+
+215          52 LOAD_CONST               8 (<code object type_by_batch at 0x000001B8142069C0, file "AutoTyping.py", line 215>)
+             54 MAKE_FUNCTION            0
+             56 STORE_NAME              10 (type_by_batch)
+
+234          58 LOAD_CONST               9 (<code object type_with_keyboard_api at 0x000001B81437B870, file "AutoTyping.py", line 234>)
+             60 MAKE_FUNCTION            0
+             62 STORE_NAME              11 (type_with_keyboard_api)
+
+243          64 LOAD_CONST              10 (<code object stop_typing at 0x000001B81401F2F0, file "AutoTyping.py", line 243>)
+             66 MAKE_FUNCTION            0
+             68 STORE_NAME              12 (stop_typing)
+
+249          70 LOAD_CONST              11 (<code object clear_text at 0x000001B8143D97D0, file "AutoTyping.py", line 249>)
+             72 MAKE_FUNCTION            0
+             74 STORE_NAME              13 (clear_text)
+             76 RETURN_CONST            12 (None)
+
+================================================================================
+FUNCTION: AutoTypingApp.__init__ SOURCE LINE: 9
+  9           0 RESUME                   0
+
+ 10           2 LOAD_FAST                1 (root)
+              4 LOAD_FAST                0 (self)
+              6 STORE_ATTR               0 (root)
+
+ 11          16 LOAD_FAST                0 (self)
+             18 LOAD_ATTR                0 (root)
+             38 LOAD_ATTR                3 (NULL|self + title)
+             58 LOAD_CONST               1 ('Auto Typing By Mas EJAAA')
+             60 CALL                     1
+             68 POP_TOP
+
+ 12          70 LOAD_FAST                0 (self)
+             72 LOAD_ATTR                0 (root)
+             92 LOAD_ATTR                5 (NULL|self + geometry)
+            112 LOAD_CONST               2 ('500x450')
+            114 CALL                     1
+            122 POP_TOP
+
+ 13         124 LOAD_FAST                0 (self)
+            126 LOAD_ATTR                0 (root)
+            146 LOAD_ATTR                7 (NULL|self + resizable)
+            166 LOAD_CONST               3 (True)
+            168 LOAD_CONST               3 (True)
+            170 CALL                     2
+            178 POP_TOP
+
+ 16         180 LOAD_FAST                0 (self)
+            182 LOAD_ATTR                9 (NULL|self + configure_styles)
+            202 CALL                     0
+            210 POP_TOP
+
+ 19         212 LOAD_FAST                0 (self)
+            214 LOAD_ATTR                0 (root)
+            234 LOAD_ATTR               11 (NULL|self + attributes)
+            254 LOAD_CONST               4 ('-topmost')
+            256 LOAD_CONST               3 (True)
+            258 CALL                     2
+            266 POP_TOP
+
+ 22         268 LOAD_CONST               5 (False)
+            270 LOAD_FAST                0 (self)
+            272 STORE_ATTR               6 (is_typing)
+
+ 23         282 LOAD_GLOBAL             15 (NULL + tk)
+            292 LOAD_ATTR               16 (IntVar)
+            312 LOAD_CONST               6 (3)
+            314 KW_NAMES                 7 (('value',))
+            316 CALL                     1
+            324 LOAD_FAST                0 (self)
+            326 STORE_ATTR               9 (delay_before_typing)
+
+ 24         336 LOAD_GLOBAL             15 (NULL + tk)
+            346 LOAD_ATTR               20 (DoubleVar)
+            366 LOAD_CONST               8 (0.001)
+            368 KW_NAMES                 7 (('value',))
+            370 CALL                     1
+            378 LOAD_FAST                0 (self)
+            380 STORE_ATTR              11 (typing_speed)
+
+ 25         390 LOAD_GLOBAL             15 (NULL + tk)
+            400 LOAD_ATTR               16 (IntVar)
+            420 LOAD_CONST               9 (20)
+            422 KW_NAMES                 7 (('value',))
+            424 CALL                     1
+            432 LOAD_FAST                0 (self)
+            434 STORE_ATTR              12 (batch_size)
+
+ 26         444 LOAD_GLOBAL             15 (NULL + tk)
+            454 LOAD_ATTR               20 (DoubleVar)
+            474 LOAD_CONST              10 (0.005)
+            476 KW_NAMES                 7 (('value',))
+            478 CALL                     1
+            486 LOAD_FAST                0 (self)
+            488 STORE_ATTR              13 (batch_delay)
+
+ 27         498 LOAD_GLOBAL             15 (NULL + tk)
+            508 LOAD_ATTR               28 (StringVar)
+            528 LOAD_CONST              11 ('batch')
+            530 KW_NAMES                 7 (('value',))
+            532 CALL                     1
+            540 LOAD_FAST                0 (self)
+            542 STORE_ATTR              15 (typing_method)
+
+ 28         552 LOAD_GLOBAL             15 (NULL + tk)
+            562 LOAD_ATTR               32 (BooleanVar)
+            582 LOAD_CONST               3 (True)
+            584 KW_NAMES                 7 (('value',))
+            586 CALL                     1
+            594 LOAD_FAST                0 (self)
+            596 STORE_ATTR              17 (always_on_top)
+
+ 30         606 LOAD_FAST                0 (self)
+            608 LOAD_ATTR               37 (NULL|self + create_widgets)
+            628 CALL                     0
+            636 POP_TOP
+            638 RETURN_CONST             0 (None)
+
+================================================================================
+FUNCTION: AutoTypingApp.configure_styles SOURCE LINE: 32
+ 32           0 RESUME                   0
+
+ 34           2 LOAD_GLOBAL              1 (NULL + ttk)
+             12 LOAD_ATTR                2 (Style)
+             32 CALL                     0
+             40 STORE_FAST               1 (style)
+
+ 35          42 LOAD_FAST                1 (style)
+             44 LOAD_ATTR                5 (NULL|self + configure)
+             64 LOAD_CONST               1 ('TFrame')
+             66 LOAD_CONST               2 ('#f0f0f0')
+             68 KW_NAMES                 3 (('background',))
+             70 CALL                     2
+             78 POP_TOP
+
+ 36          80 LOAD_FAST                1 (style)
+             82 LOAD_ATTR                5 (NULL|self + configure)
+            102 LOAD_CONST               4 ('TLabel')
+            104 LOAD_CONST               2 ('#f0f0f0')
+            106 LOAD_CONST               5 (('Segoe UI', 9))
+            108 KW_NAMES                 6 (('background', 'font'))
+            110 CALL                     3
+            118 POP_TOP
+
+ 37         120 LOAD_FAST                1 (style)
+            122 LOAD_ATTR                5 (NULL|self + configure)
+            142 LOAD_CONST               7 ('TButton')
+            144 LOAD_CONST               5 (('Segoe UI', 9))
+            146 KW_NAMES                 8 (('font',))
+            148 CALL                     2
+            156 POP_TOP
+
+ 38         158 LOAD_FAST                1 (style)
+            160 LOAD_ATTR                5 (NULL|self + configure)
+            180 LOAD_CONST               9 ('TRadiobutton')
+            182 LOAD_CONST               2 ('#f0f0f0')
+            184 LOAD_CONST               5 (('Segoe UI', 9))
+            186 KW_NAMES                 6 (('background', 'font'))
+            188 CALL                     3
+            196 POP_TOP
+
+ 39         198 LOAD_FAST                1 (style)
+            200 LOAD_ATTR                5 (NULL|self + configure)
+            220 LOAD_CONST              10 ('TCheckbutton')
+            222 LOAD_CONST               2 ('#f0f0f0')
+            224 LOAD_CONST               5 (('Segoe UI', 9))
+            226 KW_NAMES                 6 (('background', 'font'))
+            228 CALL                     3
+            236 POP_TOP
+
+ 40         238 LOAD_FAST                1 (style)
+            240 LOAD_ATTR                5 (NULL|self + configure)
+            260 LOAD_CONST              11 ('TSpinbox')
+            262 LOAD_CONST              12 (10)
+            264 KW_NAMES                13 (('arrowsize',))
+            266 CALL                     2
+            274 POP_TOP
+
+ 41         276 LOAD_FAST                1 (style)
+            278 LOAD_ATTR                5 (NULL|self + configure)
+            298 LOAD_CONST              14 ('Header.TLabel')
+            300 LOAD_CONST              15 (('Segoe UI', 10, 'bold'))
+            302 KW_NAMES                 8 (('font',))
+            304 CALL                     2
+            312 POP_TOP
+
+ 44         314 LOAD_FAST                1 (style)
+            316 LOAD_ATTR                5 (NULL|self + configure)
+            336 LOAD_CONST              16 ('TNotebook')
+            338 LOAD_CONST               2 ('#f0f0f0')
+            340 LOAD_CONST              17 (0)
+            342 KW_NAMES                18 (('background', 'tabmargin'))
+            344 CALL                     3
+            352 POP_TOP
+
+ 45         354 LOAD_FAST                1 (style)
+            356 LOAD_ATTR                5 (NULL|self + configure)
+            376 LOAD_CONST              19 ('TNotebook.Tab')
+            378 LOAD_CONST              20 (5)
+            380 LOAD_CONST              21 (2)
+            382 BUILD_LIST               2
+            384 LOAD_CONST               5 (('Segoe UI', 9))
+            386 KW_NAMES                22 (('padding', 'font'))
+            388 CALL                     3
+            396 POP_TOP
+            398 RETURN_CONST             0 (None)
+
+================================================================================
+FUNCTION: AutoTypingApp.create_widgets SOURCE LINE: 47
+ 47           0 RESUME                   0
+
+ 49           2 LOAD_GLOBAL              1 (NULL + ttk)
+             12 LOAD_ATTR                2 (Frame)
+             32 LOAD_FAST                0 (self)
+             34 LOAD_ATTR                4 (root)
+             54 LOAD_CONST               1 ('5')
+             56 KW_NAMES                 2 (('padding',))
+             58 CALL                     2
+             66 STORE_FAST               1 (main_frame)
+
+ 50          68 LOAD_FAST                1 (main_frame)
+             70 LOAD_ATTR                7 (NULL|self + pack)
+             90 LOAD_GLOBAL              8 (tk)
+            100 LOAD_ATTR               10 (BOTH)
+            120 LOAD_CONST               3 (True)
+            122 KW_NAMES                 4 (('fill', 'expand'))
+            124 CALL                     2
+            132 POP_TOP
+
+ 53         134 LOAD_GLOBAL              1 (NULL + ttk)
+            144 LOAD_ATTR               12 (Notebook)
+            164 LOAD_FAST                1 (main_frame)
+            166 CALL                     1
+            174 LOAD_FAST                0 (self)
+            176 STORE_ATTR               7 (notebook)
+
+ 54         186 LOAD_FAST                0 (self)
+            188 LOAD_ATTR               14 (notebook)
+            208 LOAD_ATTR                7 (NULL|self + pack)
+            228 LOAD_GLOBAL              8 (tk)
+            238 LOAD_ATTR               10 (BOTH)
+            258 LOAD_CONST               3 (True)
+            260 LOAD_CONST               5 (5)
+            262 LOAD_CONST               5 (5)
+            264 KW_NAMES                 6 (('fill', 'expand', 'padx', 'pady'))
+            266 CALL                     4
+            274 POP_TOP
+
+ 57         276 LOAD_GLOBAL              1 (NULL + ttk)
+            286 LOAD_ATTR                2 (Frame)
+            306 LOAD_FAST                0 (self)
+            308 LOAD_ATTR               14 (notebook)
+            328 LOAD_CONST               5 (5)
+            330 KW_NAMES                 2 (('padding',))
+            332 CALL                     2
+            340 STORE_FAST               2 (editor_tab)
+
+ 58         342 LOAD_FAST                0 (self)
+            344 LOAD_ATTR               14 (notebook)
+            364 LOAD_ATTR               17 (NULL|self + add)
+            384 LOAD_FAST                2 (editor_tab)
+            386 LOAD_CONST               7 ('Bot Typing')
+            388 KW_NAMES                 8 (('text',))
+            390 CALL                     2
+            398 POP_TOP
+
+ 61         400 LOAD_GLOBAL              1 (NULL + ttk)
+            410 LOAD_ATTR                2 (Frame)
+            430 LOAD_FAST                2 (editor_tab)
+            432 CALL                     1
+            440 STORE_FAST               3 (editor_frame)
+
+ 62         442 LOAD_FAST                3 (editor_frame)
+            444 LOAD_ATTR                7 (NULL|self + pack)
+            464 LOAD_GLOBAL              8 (tk)
+            474 LOAD_ATTR               10 (BOTH)
+            494 LOAD_CONST               3 (True)
+            496 KW_NAMES                 4 (('fill', 'expand'))
+            498 CALL                     2
+            506 POP_TOP
+
+ 64         508 LOAD_GLOBAL              1 (NULL + ttk)
+            518 LOAD_ATTR               18 (Label)
+            538 LOAD_FAST                3 (editor_frame)
+            540 LOAD_CONST               9 ('Masukan Teks Untuk Diketik:')
+            542 LOAD_CONST              10 ('Header.TLabel')
+            544 KW_NAMES                11 (('text', 'style'))
+            546 CALL                     3
+            554 LOAD_ATTR                7 (NULL|self + pack)
+            574 LOAD_GLOBAL              8 (tk)
+            584 LOAD_ATTR               20 (W)
+            604 LOAD_CONST              12 ((0, 5))
+            606 KW_NAMES                13 (('anchor', 'pady'))
+            608 CALL                     2
+            616 POP_TOP
+
+ 66         618 LOAD_GLOBAL             23 (NULL + scrolledtext)
+            628 LOAD_ATTR               24 (ScrolledText)
+            648 LOAD_FAST                3 (editor_frame)
+            650 LOAD_GLOBAL              8 (tk)
+            660 LOAD_ATTR               26 (WORD)
+            680 LOAD_CONST              14 (60)
+            682 LOAD_CONST              15 (10)
+            684 KW_NAMES                16 (('wrap', 'width', 'height'))
+            686 CALL                     4
+            694 LOAD_FAST                0 (self)
+            696 STORE_ATTR              14 (text_input)
+
+ 67         706 LOAD_FAST                0 (self)
+            708 LOAD_ATTR               28 (text_input)
+            728 LOAD_ATTR                7 (NULL|self + pack)
+            748 LOAD_GLOBAL              8 (tk)
+            758 LOAD_ATTR               10 (BOTH)
+            778 LOAD_CONST               3 (True)
+            780 KW_NAMES                 4 (('fill', 'expand'))
+            782 CALL                     2
+            790 POP_TOP
+
+ 70         792 LOAD_GLOBAL              1 (NULL + ttk)
+            802 LOAD_ATTR                2 (Frame)
+            822 LOAD_FAST                2 (editor_tab)
+            824 CALL                     1
+            832 STORE_FAST               4 (control_frame)
+
+ 71         834 LOAD_FAST                4 (control_frame)
+            836 LOAD_ATTR                7 (NULL|self + pack)
+            856 LOAD_GLOBAL              8 (tk)
+            866 LOAD_ATTR               30 (X)
+            886 LOAD_CONST              17 ((10, 0))
+            888 KW_NAMES                18 (('fill', 'pady'))
+            890 CALL                     2
+            898 POP_TOP
+
+ 74         900 LOAD_GLOBAL              1 (NULL + ttk)
+            910 LOAD_ATTR                2 (Frame)
+            930 LOAD_FAST                4 (control_frame)
+            932 CALL                     1
+            940 STORE_FAST               5 (button_frame)
+
+ 75         942 LOAD_FAST                5 (button_frame)
+            944 LOAD_ATTR                7 (NULL|self + pack)
+            964 LOAD_GLOBAL              8 (tk)
+            974 LOAD_ATTR               30 (X)
+            994 KW_NAMES                19 (('fill',))
+            996 CALL                     1
+           1004 POP_TOP
+
+ 78        1006 LOAD_GLOBAL              9 (NULL + tk)
+           1016 LOAD_ATTR               32 (Button)
+           1036 LOAD_FAST                5 (button_frame)
+           1038 LOAD_CONST              20 ('Mulai')
+
+ 79        1040 LOAD_FAST                0 (self)
+           1042 LOAD_ATTR               34 (start_typing)
+
+ 80        1062 LOAD_CONST              21 ('#4CAF50')
+           1064 LOAD_CONST              22 ('white')
+
+ 81        1066 LOAD_CONST              23 (1)
+           1068 LOAD_CONST              24 (8)
+
+ 78        1070 KW_NAMES                25 (('text', 'command', 'bg', 'fg', 'height', 'width'))
+           1072 CALL                     7
+           1080 LOAD_FAST                0 (self)
+           1082 STORE_ATTR              18 (start_button)
+
+ 82        1092 LOAD_FAST                0 (self)
+           1094 LOAD_ATTR               36 (start_button)
+           1114 LOAD_ATTR                7 (NULL|self + pack)
+           1134 LOAD_GLOBAL              8 (tk)
+           1144 LOAD_ATTR               38 (LEFT)
+           1164 LOAD_CONST              26 (2)
+           1166 KW_NAMES                27 (('side', 'padx'))
+           1168 CALL                     2
+           1176 POP_TOP
+
+ 84        1178 LOAD_GLOBAL              9 (NULL + tk)
+           1188 LOAD_ATTR               32 (Button)
+           1208 LOAD_FAST                5 (button_frame)
+           1210 LOAD_CONST              28 ('Berhenti')
+
+ 85        1212 LOAD_FAST                0 (self)
+           1214 LOAD_ATTR               40 (stop_typing)
+
+ 86        1234 LOAD_CONST              29 ('#F44336')
+           1236 LOAD_CONST              22 ('white')
+
+ 87        1238 LOAD_CONST              23 (1)
+           1240 LOAD_CONST              24 (8)
+
+ 88        1242 LOAD_GLOBAL              8 (tk)
+           1252 LOAD_ATTR               42 (DISABLED)
+
+ 84        1272 KW_NAMES                30 (('text', 'command', 'bg', 'fg', 'height', 'width', 'state'))
+           1274 CALL                     8
+           1282 LOAD_FAST                0 (self)
+           1284 STORE_ATTR              22 (stop_button)
+
+ 89        1294 LOAD_FAST                0 (self)
+           1296 LOAD_ATTR               44 (stop_button)
+           1316 LOAD_ATTR                7 (NULL|self + pack)
+           1336 LOAD_GLOBAL              8 (tk)
+           1346 LOAD_ATTR               38 (LEFT)
+           1366 LOAD_CONST              26 (2)
+           1368 KW_NAMES                27 (('side', 'padx'))
+           1370 CALL                     2
+           1378 POP_TOP
+
+ 91        1380 LOAD_GLOBAL              9 (NULL + tk)
+           1390 LOAD_ATTR               32 (Button)
+           1410 LOAD_FAST                5 (button_frame)
+           1412 LOAD_CONST              31 ('Bersihkan')
+
+ 92        1414 LOAD_FAST                0 (self)
+           1416 LOAD_ATTR               46 (clear_text)
+
+ 93        1436 LOAD_CONST              32 ('#2196F3')
+           1438 LOAD_CONST              22 ('white')
+
+ 94        1440 LOAD_CONST              23 (1)
+           1442 LOAD_CONST              24 (8)
+
+ 91        1444 KW_NAMES                25 (('text', 'command', 'bg', 'fg', 'height', 'width'))
+           1446 CALL                     7
+           1454 STORE_FAST               6 (clear_button)
+
+ 95        1456 LOAD_FAST                6 (clear_button)
+           1458 LOAD_ATTR                7 (NULL|self + pack)
+           1478 LOAD_GLOBAL              8 (tk)
+           1488 LOAD_ATTR               38 (LEFT)
+           1508 LOAD_CONST              26 (2)
+           1510 KW_NAMES                27 (('side', 'padx'))
+           1512 CALL                     2
+           1520 POP_TOP
+
+ 97        1522 LOAD_GLOBAL              1 (NULL + ttk)
+           1532 LOAD_ATTR               48 (Checkbutton)
+           1552 LOAD_FAST                5 (button_frame)
+           1554 LOAD_CONST              33 ('Selalu Di Atas')
+
+ 98        1556 LOAD_FAST                0 (self)
+           1558 LOAD_ATTR               50 (always_on_top)
+
+ 99        1578 LOAD_FAST                0 (self)
+           1580 LOAD_ATTR               52 (toggle_always_on_top)
+
+ 97        1600 KW_NAMES                34 (('text', 'variable', 'command'))
+           1602 CALL                     4
+           1610 STORE_FAST               7 (on_top_check)
+
+100        1612 LOAD_FAST                7 (on_top_check)
+           1614 LOAD_ATTR                7 (NULL|self + pack)
+           1634 LOAD_GLOBAL              8 (tk)
+           1644 LOAD_ATTR               54 (RIGHT)
+           1664 LOAD_CONST              26 (2)
+           1666 KW_NAMES                27 (('side', 'padx'))
+           1668 CALL                     2
+           1676 POP_TOP
+
+103        1678 LOAD_GLOBAL              1 (NULL + ttk)
+           1688 LOAD_ATTR                2 (Frame)
+           1708 LOAD_FAST                4 (control_frame)
+           1710 CALL                     1
+           1718 STORE_FAST               8 (countdown_frame)
+
+104        1720 LOAD_FAST                8 (countdown_frame)
+           1722 LOAD_ATTR                7 (NULL|self + pack)
+           1742 LOAD_GLOBAL              8 (tk)
+           1752 LOAD_ATTR               30 (X)
+           1772 LOAD_CONST              35 ((5, 0))
+           1774 KW_NAMES                18 (('fill', 'pady'))
+           1776 CALL                     2
+           1784 POP_TOP
+
+106        1786 LOAD_GLOBAL              1 (NULL + ttk)
+           1796 LOAD_ATTR               18 (Label)
+           1816 LOAD_FAST                8 (countdown_frame)
+           1818 LOAD_CONST              36 ('Delay:')
+           1820 KW_NAMES                 8 (('text',))
+           1822 CALL                     2
+           1830 LOAD_ATTR                7 (NULL|self + pack)
+           1850 LOAD_GLOBAL              8 (tk)
+           1860 LOAD_ATTR               38 (LEFT)
+           1880 LOAD_CONST              26 (2)
+           1882 KW_NAMES                27 (('side', 'padx'))
+           1884 CALL                     2
+           1892 POP_TOP
+
+107        1894 LOAD_GLOBAL              1 (NULL + ttk)
+           1904 LOAD_ATTR               56 (Spinbox)
+           1924 LOAD_FAST                8 (countdown_frame)
+           1926 LOAD_CONST              23 (1)
+           1928 LOAD_CONST              15 (10)
+           1930 LOAD_FAST                0 (self)
+           1932 LOAD_ATTR               58 (delay_before_typing)
+
+108        1952 LOAD_CONST              37 (3)
+
+107        1954 KW_NAMES                38 (('from_', 'to', 'textvariable', 'width'))
+           1956 CALL                     5
+
+108        1964 LOAD_ATTR                7 (NULL|self + pack)
+           1984 LOAD_GLOBAL              8 (tk)
+           1994 LOAD_ATTR               38 (LEFT)
+           2014 LOAD_CONST              26 (2)
+           2016 KW_NAMES                27 (('side', 'padx'))
+           2018 CALL                     2
+           2026 POP_TOP
+
+109        2028 LOAD_GLOBAL              1 (NULL + ttk)
+           2038 LOAD_ATTR               18 (Label)
+           2058 LOAD_FAST                8 (countdown_frame)
+           2060 LOAD_CONST              39 ('Detik')
+           2062 KW_NAMES                 8 (('text',))
+           2064 CALL                     2
+           2072 LOAD_ATTR                7 (NULL|self + pack)
+           2092 LOAD_GLOBAL              8 (tk)
+           2102 LOAD_ATTR               38 (LEFT)
+           2122 LOAD_CONST              26 (2)
+           2124 KW_NAMES                27 (('side', 'padx'))
+           2126 CALL                     2
+           2134 POP_TOP
+
+112        2136 LOAD_GLOBAL              1 (NULL + ttk)
+           2146 LOAD_ATTR                2 (Frame)
+           2166 LOAD_FAST                0 (self)
+           2168 LOAD_ATTR               14 (notebook)
+           2188 LOAD_CONST               5 (5)
+           2190 KW_NAMES                 2 (('padding',))
+           2192 CALL                     2
+           2200 STORE_FAST               9 (settings_tab)
+
+113        2202 LOAD_FAST                0 (self)
+           2204 LOAD_ATTR               14 (notebook)
+           2224 LOAD_ATTR               17 (NULL|self + add)
+           2244 LOAD_FAST                9 (settings_tab)
+           2246 LOAD_CONST              40 ('Pengaturan')
+           2248 KW_NAMES                 8 (('text',))
+           2250 CALL                     2
+           2258 POP_TOP
+
+116        2260 LOAD_GLOBAL              1 (NULL + ttk)
+           2270 LOAD_ATTR               60 (LabelFrame)
+           2290 LOAD_FAST                9 (settings_tab)
+           2292 LOAD_CONST              41 ('Metode Pengetikan')
+           2294 LOAD_CONST               5 (5)
+           2296 KW_NAMES                42 (('text', 'padding'))
+           2298 CALL                     3
+           2306 STORE_FAST              10 (method_frame)
+
+117        2308 LOAD_FAST               10 (method_frame)
+           2310 LOAD_ATTR                7 (NULL|self + pack)
+           2330 LOAD_GLOBAL              8 (tk)
+           2340 LOAD_ATTR               30 (X)
+           2360 LOAD_CONST              43 (False)
+           2362 LOAD_CONST               5 (5)
+           2364 KW_NAMES                44 (('fill', 'expand', 'pady'))
+           2366 CALL                     3
+           2374 POP_TOP
+
+119        2376 LOAD_GLOBAL              1 (NULL + ttk)
+           2386 LOAD_ATTR               62 (Radiobutton)
+           2406 LOAD_FAST               10 (method_frame)
+           2408 LOAD_CONST              45 ('Karakter (Lambat Tapi Stabil)')
+
+120        2410 LOAD_FAST                0 (self)
+           2412 LOAD_ATTR               64 (typing_method)
+           2432 LOAD_CONST              46 ('char')
+
+119        2434 KW_NAMES                47 (('text', 'variable', 'value'))
+           2436 CALL                     4
+
+120        2444 LOAD_ATTR                7 (NULL|self + pack)
+           2464 LOAD_GLOBAL              8 (tk)
+           2474 LOAD_ATTR               20 (W)
+           2494 LOAD_CONST               5 (5)
+           2496 KW_NAMES                48 (('anchor', 'padx'))
+           2498 CALL                     2
+           2506 POP_TOP
+
+121        2508 LOAD_GLOBAL              1 (NULL + ttk)
+           2518 LOAD_ATTR               62 (Radiobutton)
+           2538 LOAD_FAST               10 (method_frame)
+           2540 LOAD_CONST              49 ('Batch (Cepat, Sedikit Buffer)')
+
+122        2542 LOAD_FAST                0 (self)
+           2544 LOAD_ATTR               64 (typing_method)
+           2564 LOAD_CONST              50 ('batch')
+
+121        2566 KW_NAMES                47 (('text', 'variable', 'value'))
+           2568 CALL                     4
+
+122        2576 LOAD_ATTR                7 (NULL|self + pack)
+           2596 LOAD_GLOBAL              8 (tk)
+           2606 LOAD_ATTR               20 (W)
+           2626 LOAD_CONST               5 (5)
+           2628 KW_NAMES                48 (('anchor', 'padx'))
+           2630 CALL                     2
+           2638 POP_TOP
+
+123        2640 LOAD_GLOBAL              1 (NULL + ttk)
+           2650 LOAD_ATTR               62 (Radiobutton)
+           2670 LOAD_FAST               10 (method_frame)
+           2672 LOAD_CONST              51 ('Keyboard API (Sangat Cepat)')
+
+124        2674 LOAD_FAST                0 (self)
+           2676 LOAD_ATTR               64 (typing_method)
+           2696 LOAD_CONST              52 ('keyboard')
+
+123        2698 KW_NAMES                47 (('text', 'variable', 'value'))
+           2700 CALL                     4
+
+124        2708 LOAD_ATTR                7 (NULL|self + pack)
+           2728 LOAD_GLOBAL              8 (tk)
+           2738 LOAD_ATTR               20 (W)
+           2758 LOAD_CONST               5 (5)
+           2760 KW_NAMES                48 (('anchor', 'padx'))
+           2762 CALL                     2
+           2770 POP_TOP
+
+127        2772 LOAD_GLOBAL              1 (NULL + ttk)
+           2782 LOAD_ATTR                2 (Frame)
+           2802 LOAD_FAST                9 (settings_tab)
+           2804 CALL                     1
+           2812 STORE_FAST              11 (settings_grid)
+
+128        2814 LOAD_FAST               11 (settings_grid)
+           2816 LOAD_ATTR                7 (NULL|self + pack)
+           2836 LOAD_GLOBAL              8 (tk)
+           2846 LOAD_ATTR               30 (X)
+           2866 LOAD_CONST              43 (False)
+           2868 LOAD_CONST               5 (5)
+           2870 KW_NAMES                44 (('fill', 'expand', 'pady'))
+           2872 CALL                     3
+           2880 POP_TOP
+
+131        2882 LOAD_GLOBAL              1 (NULL + ttk)
+           2892 LOAD_ATTR               60 (LabelFrame)
+           2912 LOAD_FAST               11 (settings_grid)
+           2914 LOAD_CONST              53 ('Pengaturan Karakter')
+           2916 LOAD_CONST               5 (5)
+           2918 KW_NAMES                42 (('text', 'padding'))
+           2920 CALL                     3
+           2928 STORE_FAST              12 (char_frame)
+
+132        2930 LOAD_FAST               12 (char_frame)
+           2932 LOAD_ATTR                7 (NULL|self + pack)
+           2952 LOAD_GLOBAL              8 (tk)
+           2962 LOAD_ATTR               30 (X)
+           2982 LOAD_CONST               5 (5)
+           2984 KW_NAMES                18 (('fill', 'pady'))
+           2986 CALL                     2
+           2994 POP_TOP
+
+134        2996 LOAD_GLOBAL              1 (NULL + ttk)
+           3006 LOAD_ATTR               18 (Label)
+           3026 LOAD_FAST               12 (char_frame)
+           3028 LOAD_CONST              54 ('Delay Per Karakter:')
+           3030 KW_NAMES                 8 (('text',))
+           3032 CALL                     2
+           3040 LOAD_ATTR               67 (NULL|self + grid)
+           3060 LOAD_CONST              55 (0)
+           3062 LOAD_CONST              55 (0)
+           3064 LOAD_GLOBAL              8 (tk)
+           3074 LOAD_ATTR               20 (W)
+           3094 LOAD_CONST               5 (5)
+           3096 LOAD_CONST              26 (2)
+           3098 KW_NAMES                56 (('row', 'column', 'sticky', 'padx', 'pady'))
+           3100 CALL                     5
+           3108 POP_TOP
+
+135        3110 LOAD_GLOBAL              1 (NULL + ttk)
+           3120 LOAD_ATTR               56 (Spinbox)
+           3140 LOAD_FAST               12 (char_frame)
+           3142 LOAD_CONST              57 (0.0001)
+           3144 LOAD_CONST              58 (0.1)
+           3146 LOAD_CONST              59 (0.001)
+
+136        3148 LOAD_FAST                0 (self)
+           3150 LOAD_ATTR               68 (typing_speed)
+           3170 LOAD_CONST              60 (6)
+
+135        3172 KW_NAMES                61 (('from_', 'to', 'increment', 'textvariable', 'width'))
+           3174 CALL                     6
+
+136        3182 LOAD_ATTR               67 (NULL|self + grid)
+           3202 LOAD_CONST              55 (0)
+           3204 LOAD_CONST              23 (1)
+           3206 LOAD_CONST               5 (5)
+           3208 LOAD_CONST              26 (2)
+           3210 KW_NAMES                62 (('row', 'column', 'padx', 'pady'))
+           3212 CALL                     4
+           3220 POP_TOP
+
+137        3222 LOAD_GLOBAL              1 (NULL + ttk)
+           3232 LOAD_ATTR               18 (Label)
+           3252 LOAD_FAST               12 (char_frame)
+           3254 LOAD_CONST              63 ('detik')
+           3256 KW_NAMES                 8 (('text',))
+           3258 CALL                     2
+           3266 LOAD_ATTR               67 (NULL|self + grid)
+           3286 LOAD_CONST              55 (0)
+           3288 LOAD_CONST              26 (2)
+           3290 LOAD_GLOBAL              8 (tk)
+           3300 LOAD_ATTR               20 (W)
+           3320 LOAD_CONST               5 (5)
+           3322 LOAD_CONST              26 (2)
+           3324 KW_NAMES                56 (('row', 'column', 'sticky', 'padx', 'pady'))
+           3326 CALL                     5
+           3334 POP_TOP
+
+140        3336 LOAD_GLOBAL              1 (NULL + ttk)
+           3346 LOAD_ATTR               60 (LabelFrame)
+           3366 LOAD_FAST               11 (settings_grid)
+           3368 LOAD_CONST              64 ('Pengaturan Batch')
+           3370 LOAD_CONST               5 (5)
+           3372 KW_NAMES                42 (('text', 'padding'))
+           3374 CALL                     3
+           3382 STORE_FAST              13 (batch_frame)
+
+141        3384 LOAD_FAST               13 (batch_frame)
+           3386 LOAD_ATTR                7 (NULL|self + pack)
+           3406 LOAD_GLOBAL              8 (tk)
+           3416 LOAD_ATTR               30 (X)
+           3436 LOAD_CONST               5 (5)
+           3438 KW_NAMES                18 (('fill', 'pady'))
+           3440 CALL                     2
+           3448 POP_TOP
+
+143        3450 LOAD_GLOBAL              1 (NULL + ttk)
+           3460 LOAD_ATTR               18 (Label)
+           3480 LOAD_FAST               13 (batch_frame)
+           3482 LOAD_CONST              65 ('Ukuran Batch:')
+           3484 KW_NAMES                 8 (('text',))
+           3486 CALL                     2
+           3494 LOAD_ATTR               67 (NULL|self + grid)
+           3514 LOAD_CONST              55 (0)
+           3516 LOAD_CONST              55 (0)
+           3518 LOAD_GLOBAL              8 (tk)
+           3528 LOAD_ATTR               20 (W)
+           3548 LOAD_CONST               5 (5)
+           3550 LOAD_CONST              26 (2)
+           3552 KW_NAMES                56 (('row', 'column', 'sticky', 'padx', 'pady'))
+           3554 CALL                     5
+           3562 POP_TOP
+
+144        3564 LOAD_GLOBAL              1 (NULL + ttk)
+           3574 LOAD_ATTR               56 (Spinbox)
+           3594 LOAD_FAST               13 (batch_frame)
+           3596 LOAD_CONST               5 (5)
+           3598 LOAD_CONST              66 (50)
+           3600 LOAD_FAST                0 (self)
+           3602 LOAD_ATTR               70 (batch_size)
+           3622 LOAD_CONST              60 (6)
+           3624 KW_NAMES                38 (('from_', 'to', 'textvariable', 'width'))
+           3626 CALL                     5
+           3634 LOAD_ATTR               67 (NULL|self + grid)
+           3654 LOAD_CONST              55 (0)
+           3656 LOAD_CONST              23 (1)
+           3658 LOAD_CONST               5 (5)
+           3660 LOAD_CONST              26 (2)
+           3662 KW_NAMES                62 (('row', 'column', 'padx', 'pady'))
+           3664 CALL                     4
+           3672 POP_TOP
+
+145        3674 LOAD_GLOBAL              1 (NULL + ttk)
+           3684 LOAD_ATTR               18 (Label)
+           3704 LOAD_FAST               13 (batch_frame)
+           3706 LOAD_CONST              67 ('karakter')
+           3708 KW_NAMES                 8 (('text',))
+           3710 CALL                     2
+           3718 LOAD_ATTR               67 (NULL|self + grid)
+           3738 LOAD_CONST              55 (0)
+           3740 LOAD_CONST              26 (2)
+           3742 LOAD_GLOBAL              8 (tk)
+           3752 LOAD_ATTR               20 (W)
+           3772 LOAD_CONST               5 (5)
+           3774 LOAD_CONST              26 (2)
+           3776 KW_NAMES                56 (('row', 'column', 'sticky', 'padx', 'pady'))
+           3778 CALL                     5
+           3786 POP_TOP
+
+147        3788 LOAD_GLOBAL              1 (NULL + ttk)
+           3798 LOAD_ATTR               18 (Label)
+           3818 LOAD_FAST               13 (batch_frame)
+           3820 LOAD_CONST              68 ('Delay Antar Batch:')
+           3822 KW_NAMES                 8 (('text',))
+           3824 CALL                     2
+           3832 LOAD_ATTR               67 (NULL|self + grid)
+           3852 LOAD_CONST              23 (1)
+           3854 LOAD_CONST              55 (0)
+           3856 LOAD_GLOBAL              8 (tk)
+           3866 LOAD_ATTR               20 (W)
+           3886 LOAD_CONST               5 (5)
+           3888 LOAD_CONST              26 (2)
+           3890 KW_NAMES                56 (('row', 'column', 'sticky', 'padx', 'pady'))
+           3892 CALL                     5
+           3900 POP_TOP
+
+148        3902 LOAD_GLOBAL              1 (NULL + ttk)
+           3912 LOAD_ATTR               56 (Spinbox)
+           3932 LOAD_FAST               13 (batch_frame)
+           3934 LOAD_CONST              59 (0.001)
+           3936 LOAD_CONST              58 (0.1)
+           3938 LOAD_CONST              59 (0.001)
+
+149        3940 LOAD_FAST                0 (self)
+           3942 LOAD_ATTR               72 (batch_delay)
+           3962 LOAD_CONST              60 (6)
+
+148        3964 KW_NAMES                61 (('from_', 'to', 'increment', 'textvariable', 'width'))
+           3966 CALL                     6
+
+149        3974 LOAD_ATTR               67 (NULL|self + grid)
+           3994 LOAD_CONST              23 (1)
+           3996 LOAD_CONST              23 (1)
+           3998 LOAD_CONST               5 (5)
+           4000 LOAD_CONST              26 (2)
+           4002 KW_NAMES                62 (('row', 'column', 'padx', 'pady'))
+           4004 CALL                     4
+           4012 POP_TOP
+
+150        4014 LOAD_GLOBAL              1 (NULL + ttk)
+           4024 LOAD_ATTR               18 (Label)
+           4044 LOAD_FAST               13 (batch_frame)
+           4046 LOAD_CONST              39 ('Detik')
+           4048 KW_NAMES                 8 (('text',))
+           4050 CALL                     2
+           4058 LOAD_ATTR               67 (NULL|self + grid)
+           4078 LOAD_CONST              23 (1)
+           4080 LOAD_CONST              26 (2)
+           4082 LOAD_GLOBAL              8 (tk)
+           4092 LOAD_ATTR               20 (W)
+           4112 LOAD_CONST               5 (5)
+           4114 LOAD_CONST              26 (2)
+           4116 KW_NAMES                56 (('row', 'column', 'sticky', 'padx', 'pady'))
+           4118 CALL                     5
+           4126 POP_TOP
+
+153        4128 LOAD_GLOBAL              9 (NULL + tk)
+           4138 LOAD_ATTR               18 (Label)
+           4158 LOAD_FAST                0 (self)
+           4160 LOAD_ATTR                4 (root)
+           4180 LOAD_CONST              69 ('Siap Untuk Mengetik')
+
+154        4182 LOAD_CONST              23 (1)
+           4184 LOAD_GLOBAL              8 (tk)
+           4194 LOAD_ATTR               74 (SUNKEN)
+           4214 LOAD_GLOBAL              8 (tk)
+           4224 LOAD_ATTR               20 (W)
+
+155        4244 LOAD_CONST              70 ('#f0f0f0')
+           4246 LOAD_CONST              71 (('Segoe UI', 8))
+
+153        4248 KW_NAMES                72 (('text', 'bd', 'relief', 'anchor', 'bg', 'font'))
+           4250 CALL                     7
+           4258 LOAD_FAST                0 (self)
+           4260 STORE_ATTR              38 (status_label)
+
+156        4270 LOAD_FAST                0 (self)
+           4272 LOAD_ATTR               76 (status_label)
+           4292 LOAD_ATTR                7 (NULL|self + pack)
+           4312 LOAD_GLOBAL              8 (tk)
+           4322 LOAD_ATTR               78 (BOTTOM)
+           4342 LOAD_GLOBAL              8 (tk)
+           4352 LOAD_ATTR               30 (X)
+           4372 KW_NAMES                73 (('side', 'fill'))
+           4374 CALL                     2
+           4382 POP_TOP
+           4384 RETURN_CONST             0 (None)
+
+================================================================================
+FUNCTION: AutoTypingApp.toggle_always_on_top SOURCE LINE: 158
+158           0 RESUME                   0
+
+159           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (root)
+             24 LOAD_ATTR                3 (NULL|self + attributes)
+             44 LOAD_CONST               1 ('-topmost')
+             46 LOAD_FAST                0 (self)
+             48 LOAD_ATTR                4 (always_on_top)
+             68 LOAD_ATTR                7 (NULL|self + get)
+             88 CALL                     0
+             96 CALL                     2
+            104 POP_TOP
+            106 RETURN_CONST             0 (None)
+
+================================================================================
+FUNCTION: AutoTypingApp.start_typing SOURCE LINE: 161
+161           0 RESUME                   0
+
+162           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (text_input)
+             24 LOAD_ATTR                3 (NULL|self + get)
+             44 LOAD_CONST               1 ('1.0')
+             46 LOAD_GLOBAL              4 (tk)
+             56 LOAD_ATTR                6 (END)
+             76 CALL                     2
+             84 LOAD_ATTR                9 (NULL|self + strip)
+            104 CALL                     0
+            112 POP_JUMP_IF_TRUE        29 (to 172)
+
+163         114 LOAD_FAST                0 (self)
+            116 LOAD_ATTR               10 (status_label)
+            136 LOAD_ATTR               13 (NULL|self + config)
+            156 LOAD_CONST               2 ('Error: Tidak Ada Teks Untuk Diketik!')
+            158 KW_NAMES                 3 (('text',))
+            160 CALL                     1
+            168 POP_TOP
+
+164         170 RETURN_CONST             0 (None)
+
+166     >>  172 LOAD_CONST               4 (True)
+            174 LOAD_FAST                0 (self)
+            176 STORE_ATTR               7 (is_typing)
+
+167         186 LOAD_FAST                0 (self)
+            188 LOAD_ATTR               16 (start_button)
+            208 LOAD_ATTR               13 (NULL|self + config)
+            228 LOAD_GLOBAL              4 (tk)
+            238 LOAD_ATTR               18 (DISABLED)
+            258 KW_NAMES                 5 (('state',))
+            260 CALL                     1
+            268 POP_TOP
+
+168         270 LOAD_FAST                0 (self)
+            272 LOAD_ATTR               20 (stop_button)
+            292 LOAD_ATTR               13 (NULL|self + config)
+            312 LOAD_GLOBAL              4 (tk)
+            322 LOAD_ATTR               22 (NORMAL)
+            342 KW_NAMES                 5 (('state',))
+            344 CALL                     1
+            352 POP_TOP
+
+171         354 LOAD_GLOBAL             25 (NULL + threading)
+            364 LOAD_ATTR               26 (Thread)
+            384 LOAD_FAST                0 (self)
+            386 LOAD_ATTR               28 (perform_typing)
+            406 KW_NAMES                 6 (('target',))
+            408 CALL                     1
+            416 STORE_FAST               1 (typing_thread)
+
+172         418 LOAD_CONST               4 (True)
+            420 LOAD_FAST                1 (typing_thread)
+            422 STORE_ATTR              15 (daemon)
+
+173         432 LOAD_FAST                1 (typing_thread)
+            434 LOAD_ATTR               33 (NULL|self + start)
+            454 CALL                     0
+            462 POP_TOP
+            464 RETURN_CONST             0 (None)
+
+================================================================================
+FUNCTION: AutoTypingApp.perform_typing SOURCE LINE: 175
+175           0 RESUME                   0
+
+176           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (text_input)
+             24 LOAD_ATTR                3 (NULL|self + get)
+             44 LOAD_CONST               1 ('1.0')
+             46 LOAD_GLOBAL              4 (tk)
+             56 LOAD_ATTR                6 (END)
+             76 CALL                     2
+             84 STORE_FAST               1 (text_to_type)
+
+177          86 LOAD_FAST                0 (self)
+             88 LOAD_ATTR                8 (delay_before_typing)
+            108 LOAD_ATTR                3 (NULL|self + get)
+            128 CALL                     0
+            136 STORE_FAST               2 (delay)
+
+179         138 LOAD_FAST                0 (self)
+            140 LOAD_ATTR               10 (status_label)
+            160 LOAD_ATTR               13 (NULL|self + config)
+            180 LOAD_CONST               2 ('Siapkan Kursor - Mulai Dalam ')
+            182 LOAD_FAST                2 (delay)
+            184 FORMAT_VALUE             0
+            186 LOAD_CONST               3 (' Detik...')
+            188 BUILD_STRING             3
+            190 KW_NAMES                 4 (('text',))
+            192 CALL                     1
+            200 POP_TOP
+
+182         202 LOAD_GLOBAL             15 (NULL + range)
+            212 LOAD_FAST                2 (delay)
+            214 LOAD_CONST               5 (0)
+            216 LOAD_CONST               6 (-1)
+            218 CALL                     3
+            226 GET_ITER
+        >>  228 FOR_ITER                69 (to 370)
+            232 STORE_FAST               3 (i)
+
+183         234 LOAD_FAST                0 (self)
+            236 LOAD_ATTR               16 (is_typing)
+            256 POP_JUMP_IF_TRUE         2 (to 262)
+
+184         258 POP_TOP
+            260 RETURN_CONST             0 (None)
+
+185     >>  262 LOAD_FAST                0 (self)
+            264 LOAD_ATTR               10 (status_label)
+            284 LOAD_ATTR               13 (NULL|self + config)
+            304 LOAD_CONST               7 ('Mulai Mengetik Dalam ')
+            306 LOAD_FAST                3 (i)
+            308 FORMAT_VALUE             0
+            310 LOAD_CONST               3 (' Detik...')
+            312 BUILD_STRING             3
+            314 KW_NAMES                 4 (('text',))
+            316 CALL                     1
+            324 POP_TOP
+
+186         326 LOAD_GLOBAL             19 (NULL + time)
+            336 LOAD_ATTR               20 (sleep)
+            356 LOAD_CONST               8 (1)
+            358 CALL                     1
+            366 POP_TOP
+            368 JUMP_BACKWARD           71 (to 228)
+
+182     >>  370 END_FOR
+
+188         372 LOAD_FAST                0 (self)
+            374 LOAD_ATTR               10 (status_label)
+            394 LOAD_ATTR               13 (NULL|self + config)
+            414 LOAD_CONST               9 ('Sedang Mengetik...')
+            416 KW_NAMES                 4 (('text',))
+            418 CALL                     1
+            426 POP_TOP
+
+191         428 LOAD_FAST                0 (self)
+            430 LOAD_ATTR               22 (typing_method)
+            450 LOAD_ATTR                3 (NULL|self + get)
+            470 CALL                     0
+            478 STORE_FAST               4 (method)
+
+193         480 LOAD_FAST                4 (method)
+            482 LOAD_CONST              10 ('char')
+            484 COMPARE_OP              40 (==)
+            488 POP_JUMP_IF_FALSE       18 (to 526)
+
+194         490 LOAD_FAST                0 (self)
+            492 LOAD_ATTR               25 (NULL|self + type_char_by_char)
+            512 LOAD_FAST                1 (text_to_type)
+            514 CALL                     1
+            522 POP_TOP
+            524 JUMP_FORWARD            45 (to 616)
+
+195     >>  526 LOAD_FAST                4 (method)
+            528 LOAD_CONST              11 ('batch')
+            530 COMPARE_OP              40 (==)
+            534 POP_JUMP_IF_FALSE       18 (to 572)
+
+196         536 LOAD_FAST                0 (self)
+            538 LOAD_ATTR               27 (NULL|self + type_by_batch)
+            558 LOAD_FAST                1 (text_to_type)
+            560 CALL                     1
+            568 POP_TOP
+            570 JUMP_FORWARD            22 (to 616)
+
+197     >>  572 LOAD_FAST                4 (method)
+            574 LOAD_CONST              12 ('keyboard')
+            576 COMPARE_OP              40 (==)
+            580 POP_JUMP_IF_FALSE       17 (to 616)
+
+198         582 LOAD_FAST                0 (self)
+            584 LOAD_ATTR               29 (NULL|self + type_with_keyboard_api)
+            604 LOAD_FAST                1 (text_to_type)
+            606 CALL                     1
+            614 POP_TOP
+
+200     >>  616 LOAD_FAST                0 (self)
+            618 LOAD_ATTR               16 (is_typing)
+            638 POP_JUMP_IF_FALSE      120 (to 880)
+
+201         640 LOAD_CONST              13 (False)
+            642 LOAD_FAST                0 (self)
+            644 STORE_ATTR               8 (is_typing)
+
+202         654 LOAD_FAST                0 (self)
+            656 LOAD_ATTR               30 (start_button)
+            676 LOAD_ATTR               13 (NULL|self + config)
+            696 LOAD_GLOBAL              4 (tk)
+            706 LOAD_ATTR               32 (NORMAL)
+            726 KW_NAMES                14 (('state',))
+            728 CALL                     1
+            736 POP_TOP
+
+203         738 LOAD_FAST                0 (self)
+            740 LOAD_ATTR               34 (stop_button)
+            760 LOAD_ATTR               13 (NULL|self + config)
+            780 LOAD_GLOBAL              4 (tk)
+            790 LOAD_ATTR               36 (DISABLED)
+            810 KW_NAMES                14 (('state',))
+            812 CALL                     1
+            820 POP_TOP
+
+204         822 LOAD_FAST                0 (self)
+            824 LOAD_ATTR               10 (status_label)
+            844 LOAD_ATTR               13 (NULL|self + config)
+            864 LOAD_CONST              15 ('Pengetikan Selesai!')
+            866 KW_NAMES                 4 (('text',))
+            868 CALL                     1
+            876 POP_TOP
+            878 RETURN_CONST             0 (None)
+
+200     >>  880 RETURN_CONST             0 (None)
+
+================================================================================
+FUNCTION: AutoTypingApp.type_char_by_char SOURCE LINE: 206
+206           0 RESUME                   0
+
+208           2 LOAD_FAST                1 (text)
+              4 GET_ITER
+        >>    6 FOR_ITER                82 (to 174)
+             10 STORE_FAST               2 (char)
+
+209          12 LOAD_FAST                0 (self)
+             14 LOAD_ATTR                0 (is_typing)
+             34 POP_JUMP_IF_TRUE         2 (to 40)
+
+210          36 POP_TOP
+             38 RETURN_CONST             1 (None)
+
+212     >>   40 LOAD_GLOBAL              3 (NULL + pyautogui)
+             50 LOAD_ATTR                4 (write)
+             70 LOAD_FAST                2 (char)
+             72 CALL                     1
+             80 POP_TOP
+
+213          82 LOAD_GLOBAL              7 (NULL + time)
+             92 LOAD_ATTR                8 (sleep)
+            112 LOAD_FAST                0 (self)
+            114 LOAD_ATTR               10 (typing_speed)
+            134 LOAD_ATTR               13 (NULL|self + get)
+            154 CALL                     0
+            162 CALL                     1
+            170 POP_TOP
+            172 JUMP_BACKWARD           84 (to 6)
+
+208     >>  174 END_FOR
+            176 RETURN_CONST             1 (None)
+
+================================================================================
+FUNCTION: AutoTypingApp.type_by_batch SOURCE LINE: 215
+215           0 RESUME                   0
+
+217           2 LOAD_GLOBAL              1 (NULL + list)
+             12 LOAD_FAST                1 (text)
+             14 CALL                     1
+             22 STORE_FAST               2 (chars)
+
+218          24 LOAD_FAST                0 (self)
+             26 LOAD_ATTR                2 (batch_size)
+             46 LOAD_ATTR                5 (NULL|self + get)
+             66 CALL                     0
+             74 STORE_FAST               3 (batch_size)
+
+221          76 LOAD_GLOBAL              7 (NULL + range)
+             86 LOAD_CONST               1 (0)
+             88 LOAD_GLOBAL              9 (NULL + len)
+             98 LOAD_FAST                2 (chars)
+            100 CALL                     1
+            108 LOAD_FAST                3 (batch_size)
+            110 CALL                     3
+            118 GET_ITER
+        >>  120 FOR_ITER               105 (to 334)
+            124 STORE_FAST               4 (i)
+
+222         126 LOAD_FAST                0 (self)
+            128 LOAD_ATTR               10 (is_typing)
+            148 POP_JUMP_IF_TRUE         2 (to 154)
+
+223         150 POP_TOP
+            152 RETURN_CONST             2 (None)
+
+226     >>  154 LOAD_CONST               3 ('')
+            156 LOAD_ATTR               13 (NULL|self + join)
+            176 LOAD_FAST                2 (chars)
+            178 LOAD_FAST                4 (i)
+            180 LOAD_FAST                4 (i)
+            182 LOAD_FAST                3 (batch_size)
+            184 BINARY_OP                0 (+)
+            188 BINARY_SLICE
+            190 CALL                     1
+            198 STORE_FAST               5 (batch)
+
+229         200 LOAD_GLOBAL             15 (NULL + pyautogui)
+            210 LOAD_ATTR               16 (write)
+            230 LOAD_FAST                5 (batch)
+            232 CALL                     1
+            240 POP_TOP
+
+232         242 LOAD_GLOBAL             19 (NULL + time)
+            252 LOAD_ATTR               20 (sleep)
+            272 LOAD_FAST                0 (self)
+            274 LOAD_ATTR               22 (batch_delay)
+            294 LOAD_ATTR                5 (NULL|self + get)
+            314 CALL                     0
+            322 CALL                     1
+            330 POP_TOP
+            332 JUMP_BACKWARD          107 (to 120)
+
+221     >>  334 END_FOR
+            336 RETURN_CONST             2 (None)
+
+================================================================================
+FUNCTION: AutoTypingApp.type_with_keyboard_api SOURCE LINE: 234
+234           0 RESUME                   0
+
+236           2 LOAD_FAST                1 (text)
+              4 GET_ITER
+        >>    6 FOR_ITER                37 (to 84)
+             10 STORE_FAST               2 (char)
+
+237          12 LOAD_FAST                0 (self)
+             14 LOAD_ATTR                0 (is_typing)
+             34 POP_JUMP_IF_TRUE         2 (to 40)
+
+238          36 POP_TOP
+             38 RETURN_CONST             1 (None)
+
+240     >>   40 LOAD_GLOBAL              3 (NULL + keyboard)
+             50 LOAD_ATTR                4 (write)
+             70 LOAD_FAST                2 (char)
+             72 CALL                     1
+             80 POP_TOP
+             82 JUMP_BACKWARD           39 (to 6)
+
+236     >>   84 END_FOR
+             86 RETURN_CONST             1 (None)
+
+================================================================================
+FUNCTION: AutoTypingApp.stop_typing SOURCE LINE: 243
+243           0 RESUME                   0
+
+244           2 LOAD_CONST               1 (False)
+              4 LOAD_FAST                0 (self)
+              6 STORE_ATTR               0 (is_typing)
+
+245          16 LOAD_FAST                0 (self)
+             18 LOAD_ATTR                2 (start_button)
+             38 LOAD_ATTR                5 (NULL|self + config)
+             58 LOAD_GLOBAL              6 (tk)
+             68 LOAD_ATTR                8 (NORMAL)
+             88 KW_NAMES                 2 (('state',))
+             90 CALL                     1
+             98 POP_TOP
+
+246         100 LOAD_FAST                0 (self)
+            102 LOAD_ATTR               10 (stop_button)
+            122 LOAD_ATTR                5 (NULL|self + config)
+            142 LOAD_GLOBAL              6 (tk)
+            152 LOAD_ATTR               12 (DISABLED)
+            172 KW_NAMES                 2 (('state',))
+            174 CALL                     1
+            182 POP_TOP
+
+247         184 LOAD_FAST                0 (self)
+            186 LOAD_ATTR               14 (status_label)
+            206 LOAD_ATTR                5 (NULL|self + config)
+            226 LOAD_CONST               3 ('Pengetikan Dihentikan!')
+            228 KW_NAMES                 4 (('text',))
+            230 CALL                     1
+            238 POP_TOP
+            240 RETURN_CONST             0 (None)
+
+================================================================================
+FUNCTION: AutoTypingApp.clear_text SOURCE LINE: 249
+249           0 RESUME                   0
+
+250           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (text_input)
+             24 LOAD_ATTR                3 (NULL|self + delete)
+             44 LOAD_CONST               1 ('1.0')
+             46 LOAD_GLOBAL              4 (tk)
+             56 LOAD_ATTR                6 (END)
+             76 CALL                     2
+             84 POP_TOP
+
+251          86 LOAD_FAST                0 (self)
+             88 LOAD_ATTR                8 (status_label)
+            108 LOAD_ATTR               11 (NULL|self + config)
+            128 LOAD_CONST               2 ('Teks Dibersihkan')
+            130 KW_NAMES                 3 (('text',))
+            132 CALL                     1
+            140 POP_TOP
+            142 RETURN_CONST             0 (None)
